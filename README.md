@@ -1,4 +1,4 @@
-This is a template for turning your awesome research project into a project website. Most of the code are shamelessly stolen online from somewhere else. Click on the website on the right of this repo to see it in action.
+This is a template for turning your awesome research project into a project website. Most of the code are shamelessly stolen online from somewhere else. Click [here](https://irvingf7.github.io/ai4ce_project_website_template/) to see it in action.
 
 `index.html` is the major file you will be editing, and it has some comments to guide you. 
 
