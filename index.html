@@ -121,25 +121,25 @@
             <span class="author-block">
               <a href="">Zhen Jia*</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="">Boyi Li</a><sup>1</sup>
+              <a href="">Boyi Li</a><sup>2</sup>
             </span>
             <span class="author-block">
-              <a href="https:">Yan Wang</a><sup>1</sup>,
+              <a href="https:">Yan Wang</a><sup>2</sup>,
             </span>
             <span class="author-block">
-              <a href="https:">Boris Ivanovic</a><sup>1</sup>,
+              <a href="https:">Boris Ivanovic</a><sup>2</sup>,
             </span>
             <span class="author-block">
-              <a href="https://">Yurong You</a><sup>1</sup>,
+              <a href="https://">Yurong You</a><sup>2</sup>,
             </span>
             <span class="author-block">
-              <a href="https://">Lingjie Liu</a><sup>2</sup>,
+              <a href="https://">Lingjie Liu</a><sup>3</sup>,
             </span>
             <span class="author-block">
-              <a href="https://">Yue Wang</a><sup>3</sup>,
+              <a href="https://">Yue Wang</a><sup>2</sup>,
             </span>
             <span class="author-block">
-              <a href="https://">Marco Pavone</a><sup>1</sup>
+              <a href="https://">Marco Pavone</a><sup>2</sup>
             </span>
             <span class="author-block">
               <a href="https://scholar.google.com/citations?user=YeG8ZM0AAAAJ">Chen Feng</a><sup>1</sup>,
@@ -354,15 +354,15 @@
 </section>
 
 <!-- Video Comparison -->
-<section class="section">
+<!-- <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered ">
       <div class="column is-full-width">
         <h2 class="title is-3 has-text-centered">Video Comparison</h2>
         <div class="content has-text-justified">
-          <center>
+          <center> -->
             <!-- Here, the switchVideo's argument should be the name of the video -->
-            <button class="btn" id="rgb_button" onclick="switchVideo('rgb')">RGB</button>
+            <!-- <button class="btn" id="rgb_button" onclick="switchVideo('rgb')">RGB</button>
             <button class="btn" id="depth_button" onclick="switchVideo('depth')">Depth</button>
             <button class="btn" id="normal_button" onclick="switchVideo('normal')">Normal</button>
             <button class="btn" id="touch_button" onclick="switchVideo('touch')">Touch Integration</button>
@@ -392,22 +392,22 @@
   </div>
 </section>
 
-<hr>
+<hr> -->
 
 <!-- Method Overview -->
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered ">
       <div class="column is-full-width">
-        <h2 class="title is-3 has-text-centered">Method</h2>
-        <center>
+        <h2 class="title is-3 has-text-centered">Dataset Visualization</h2>
+        <!-- <center> -->
           <!-- This image is always visible  -->
-          <div id="overview">
-            <img src="./static/images/EUVS benchmark figure.pdf" style="width: 45vw; min-width: 330px;" alt="Overview Image"> 
+          <div id="Dataset Visualization">
+            <img src="./static/images/COLMAP visualization.png" style="width: 45vw; min-width: 330px;" alt="Overview Image"> 
           </div>
 
           <!-- Here, the changeContent's parameter is just the number of the button. Has no intrinsic association with the content -->
-          <button id="method_button1" class="btn" onclick="changeContent(1)">1. Robust Global Shape Representation</button>
+          <!-- <button id="method_button1" class="btn" onclick="changeContent(1)">1. Robust Global Shape Representation</button>
           <button id="method_button2" class="btn" onclick="changeContent(2)">2. Active Touch Selection</button>
           <button id="method_button3" class="btn" onclick="changeContent(3)">3. Local Geometric Optimization</button>
 
@@ -423,10 +423,10 @@
             <center>
               <img id="image-content" src="./static/images/Method_1.png" style="width: 45vw; min-width: 330px;" />
             </center>
-          </div>
-        </center>
+          </div> -->
+        <!-- </center> -->
 
-        <script>
+        <!-- <script>
           document.getElementById('method_button1').classList.add('active');
           function changeContent(buttonNumber) {
               const textElement = document.getElementById('text-content');
@@ -473,7 +473,7 @@
                   // imageElement.alt = "Image 3";
               }
           }
-        </script>
+        </script> -->
 
       </div>
     </div>
@@ -488,10 +488,13 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-full-width">
         
-        <h2 class="title is-3">More Visualizations</h2>
-        <center>
+        <h2 class="title is-3">Results Comparison across Different Levels</h2>
+        <div id="Dataset ">
+          <img src="./static/images/Results comparison.png" style="width: 45vw; min-width: 330px;" alt="Overview Image"> 
+        </div>
+        <!-- <center> -->
           <!-- Here, the argument of the switchSlider function should be the name of the slider block, just without the "_block" part. -->
-          <button class="btn" id="black_9_button" onclick="switchSlider('black_9')">Black Bunny (9 Views)</button>
+          <!-- <button class="btn" id="black_9_button" onclick="switchSlider('black_9')">Black Bunny (9 Views)</button>
           <button class="btn" id="black_5_button" onclick="switchSlider('black_5')">Black Bunny (5 Views)</button>
           <button class="btn" id="reflective_9_button" onclick="switchSlider('reflective_9')">Reflective Bunny (9 Views)</button>
           <button class="btn" id="reflective_5_button" onclick="switchSlider('reflective_5')">Reflective Bunny (5 Views)</button>
@@ -500,10 +503,10 @@
           <button class="btn" id="coke_9_button" onclick="switchSlider('coke_9')">Coke Bottle (9 Views)</button>
           <button class="btn" id="coke_5_button" onclick="switchSlider('coke_5')">Coke Bottle (5 Views)</button>
           <br>
-          <br>
-        </center>
+          <br> -->
+        <!-- </center> -->
 
-        <div class="slider-block" id="black_9_block">
+        <!-- <div class="slider-block" id="black_9_block">
           <div class="sliders-container">
             <div class="slider-wrapper">
               <h2>Novel View Synthesis (RGB) </h2>
@@ -514,9 +517,9 @@
               <div id="black_9_gt"></div>
             </div>
           </div>
-          <br>
+          <br> -->
           <!-- depth and normal sliders -->
-          <div class="sliders-container">
+          <!-- <div class="sliders-container">
             <div class="slider-wrapper">
               <h2>Novel View Synthesis (Depth) </h2>
               <div id="black_9_depth"></div>
@@ -526,9 +529,9 @@
               <div id="black_9_normal"></div>
             </div>
           </div>
-        </div>
+        </div> -->
 
-        <div class="slider-block" id="black_5_block">
+        <!-- <div class="slider-block" id="black_5_block">
           <div class="sliders-container">
             <div class="slider-wrapper">
               <h2>Novel View Synthesis (RGB) </h2>
@@ -539,9 +542,9 @@
               <div id="black_5_gt"></div>
             </div>
           </div>
-          <br>
+          <br> -->
           <!-- depth and normal sliders -->
-          <div class="sliders-container">
+          <!-- <div class="sliders-container">
             <div class="slider-wrapper">
               <h2>Novel View Synthesis (Depth) </h2>
               <div id="black_5_depth"></div>
@@ -551,9 +554,9 @@
               <div id="black_5_normal"></div>
             </div>
           </div>
-        </div>
+        </div> -->
 
-        <div class="slider-block" id="transparent_9_block">
+        <!-- <div class="slider-block" id="transparent_9_block">
           <div class="sliders-container">
             <div class="slider-wrapper">
               <h2>Novel View Synthesis (RGB) </h2>
@@ -564,9 +567,9 @@
               <div id="transparent_9_gt"></div>
             </div>
           </div>
-          <br>
+          <br> -->
           <!-- depth and normal sliders -->
-          <div class="sliders-container">
+          <!-- <div class="sliders-container">
             <div class="slider-wrapper">
               <h2>Novel View Synthesis (Depth) </h2>
               <div id="transparent_9_depth"></div>
@@ -576,9 +579,9 @@
               <div id="transparent_9_normal"></div>
             </div>
           </div>
-        </div>
+        </div> -->
 
-        <div class="slider-block" id="transparent_5_block">
+        <!-- <div class="slider-block" id="transparent_5_block">
           <div class="sliders-container">
             <div class="slider-wrapper">
               <h2>Novel View Synthesis (RGB) </h2>
@@ -589,9 +592,9 @@
               <div id="transparent_5_gt"></div>
             </div>
           </div>
-          <br>
+          <br> -->
           <!-- depth and normal sliders -->
-          <div class="sliders-container">
+          <!-- <div class="sliders-container">
             <div class="slider-wrapper">
               <h2>Novel View Synthesis (Depth) </h2>
               <div id="transparent_5_depth"></div>
@@ -601,9 +604,9 @@
               <div id="transparent_5_normal"></div>
             </div>
           </div>
-        </div>
+        </div> -->
 
-        <div class="slider-block" id="reflective_9_block">
+        <!-- <div class="slider-block" id="reflective_9_block">
           <div class="sliders-container">
             <div class="slider-wrapper">
               <h2>Novel View Synthesis (RGB) </h2>
@@ -614,9 +617,9 @@
               <div id="reflective_9_gt"></div>
             </div>
           </div>
-          <br>
+          <br> -->
           <!-- depth and normal sliders -->
-          <div class="sliders-container">
+          <!-- <div class="sliders-container">
             <div class="slider-wrapper">
               <h2>Novel View Synthesis (Depth) </h2>
               <div id="reflective_9_depth"></div>
@@ -626,9 +629,9 @@
               <div id="reflective_9_normal"></div>
             </div>
           </div>
-        </div>
+        </div> -->
 
-        <div class="slider-block" id="reflective_5_block">
+        <!-- <div class="slider-block" id="reflective_5_block">
           <div class="sliders-container">
             <div class="slider-wrapper">
               <h2>Novel View Synthesis (RGB) </h2>
@@ -639,9 +642,9 @@
               <div id="reflective_5_gt"></div>
             </div>
           </div>
-          <br>
+          <br> -->
           <!-- depth and normal sliders -->
-          <div class="sliders-container">
+          <!-- <div class="sliders-container">
             <div class="slider-wrapper">
               <h2>Novel View Synthesis (Depth) </h2>
               <div id="reflective_5_depth"></div>
@@ -651,9 +654,9 @@
               <div id="reflective_5_normal"></div>
             </div>
           </div>
-        </div>
+        </div> -->
 
-        <div class="slider-block" id="coke_9_block">
+        <!-- <div class="slider-block" id="coke_9_block">
           <div class="sliders-container">
             <div class="slider-wrapper">
               <h2>Novel View Synthesis (RGB) </h2>
@@ -664,9 +667,9 @@
               <div id="coke_9_gt"></div>
             </div>
           </div>
-          <br>
+          <br> -->
           <!-- depth and normal sliders -->
-          <div class="sliders-container">
+          <!-- <div class="sliders-container">
             <div class="slider-wrapper">
               <h2>Novel View Synthesis (Depth) </h2>
               <div id="coke_9_depth"></div>
@@ -676,9 +679,9 @@
               <div id="coke_9_normal"></div>
             </div>
           </div>
-        </div>
+        </div> -->
         
-        <div class="slider-block" id="coke_5_block">
+        <!-- <div class="slider-block" id="coke_5_block">
           <div class="sliders-container">
             <div class="slider-wrapper">
               <h2>Novel View Synthesis (RGB) </h2>
@@ -689,9 +692,9 @@
               <div id="coke_5_gt"></div>
             </div>
           </div>
-          <br>
+          <br> -->
           <!-- depth and normal sliders -->
-          <div class="sliders-container">
+          <!-- <div class="sliders-container">
             <div class="slider-wrapper">
               <h2>Novel View Synthesis (Depth) </h2>
               <div id="coke_5_depth"></div>
@@ -701,14 +704,14 @@
               <div id="coke_5_normal"></div>
             </div>
           </div>
-        </div>
+        </div> -->
 
-        <script src="https://cdn.knightlab.com/libs/juxtapose/latest/js/juxtapose.min.js"></script>
+        <!-- <script src="https://cdn.knightlab.com/libs/juxtapose/latest/js/juxtapose.min.js"></script>
         <link rel="stylesheet" href="https://cdn.knightlab.com/libs/juxtapose/latest/css/juxtapose.css">
-        <script src="./static/js/juxtapose-slider.js"></script> <!-- Include your slider.js file
+        <script src="./static/js/juxtapose-slider.js"></script> Include your slider.js file -->
          
         <!-- script for the sliders -->
-        <script>
+        <!-- <script>
           // Slider configurations
           let slider_dict = {
             black_9: 
@@ -1221,7 +1224,7 @@
               }
           }
 
-        </script>
+        </script> -->
       </div>
     </div>
   </div>
